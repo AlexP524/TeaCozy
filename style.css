@@ -1,6 +1,8 @@
-body {
+
+
+* {
   font-family: Helvetica;
-  font-size: 22px;
+  /*font-size: 22px;*/
   color: seashell;
   background-color: black;
   opacity: 0.9;
@@ -13,15 +15,17 @@ body {
   align-items: center;
   height: 69px;
   width: 100%;
+  top: 0;
   position: fixed;
+  background-color: black;
   border-bottom: 1px solid seashell;
+  z-index: 100;
 }
 
 a {
   text-decoration: underline;
   color: seashell;
 }
-
 
 .logo {
   margin-left: 10px;
@@ -30,12 +34,63 @@ a {
 
 .logo img {
   height: 50px;
+  width: auto;
 }
 
 nav {
-  margin-right: 15px;
+  margin-right: 5px;
 }
 
 nav a {
   padding-right: 20px;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  height: 700px;
+  width: 1200px;
+  top: 69px;
+  background-image: url(images/img-mission-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.jumbotron .banner {
+  width: 100%;
+  background-color: black;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+    /*padding: 50px 0;*/
+}
+
+.content-title {
+  width: 100%;
+  padding: 50px 0;
+}
+
+img {
+  height: 200px;
+  width: 300px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.product h4 {
+  margin: 10px 0;
 }
